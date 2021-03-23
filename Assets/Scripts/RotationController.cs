@@ -12,6 +12,7 @@ public class RotationController : MonoBehaviour
     {
         if (enabled)
         {
+            Debug.Log("GIRO");
             transform.parent.Rotate(new Vector3(180, 0, 0));
             enabled = false;
 
