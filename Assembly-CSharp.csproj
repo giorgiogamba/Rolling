@@ -70,6 +70,7 @@
      <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
      <Compile Include="Assets\Scripts\CannonController.cs" />
+     <Compile Include="Assets\Scripts\CannonCursorController.cs" />
      <Compile Include="Assets\Scripts\CarController.cs" />
      <Compile Include="Assets\Scripts\CharController.cs" />
      <Compile Include="Assets\Scripts\ColorTrigger.cs" />
@@ -83,6 +84,7 @@
      <Compile Include="Assets\Scripts\PointChecker.cs" />
      <Compile Include="Assets\Scripts\RotationController.cs" />
      <Compile Include="Assets\Scripts\SphereController.cs" />
+     <Compile Include="Assets\Scripts\StrikesCounterController.cs" />
      <Compile Include="Assets\Scripts\TimeBarController.cs" />
      <Compile Include="Assets\Scripts\UIScripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\WallBounceController.cs" />

@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class PointChecker : MonoBehaviour
 {
+    public StrikesCounterController scc;
 
     private void OnTriggerEnter(Collider other)
     {
         
         Debug.Log("Colpito!");
-
-        //Aumentare lo score
+        scc.UpdateStrike();
+        
     }
 }
