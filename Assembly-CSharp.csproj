@@ -69,10 +69,12 @@
      <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
+     <Compile Include="Assets\Scripts\BB8Controller.cs" />
      <Compile Include="Assets\Scripts\CannonController.cs" />
      <Compile Include="Assets\Scripts\CannonCursorController.cs" />
      <Compile Include="Assets\Scripts\CarController.cs" />
      <Compile Include="Assets\Scripts\CharController.cs" />
+     <Compile Include="Assets\Scripts\CharControllerProva.cs" />
      <Compile Include="Assets\Scripts\ColorTrigger.cs" />
      <Compile Include="Assets\Scripts\ColorsController.cs" />
      <Compile Include="Assets\Scripts\CouplesController.cs" />

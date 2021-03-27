@@ -67,8 +67,10 @@ public class CharController : MonoBehaviour
     void Jump() {
         if (IsGrounded()) //if the character is touching the ground
         {
+            Debug.Log("SOno dentro grounded");
             if (Input.GetButtonDown("Jump"))
             {
+                Debug.Log("Sto premendo JUMP");
                 rb.AddForce(new Vector3(0f, jumpForce, 0f), ForceMode.Impulse);
             }
         }

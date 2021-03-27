@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Levels/8_order_1.unity
+- path: Assets/Scenes/Tests/1_orangebot.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
