@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Prototypes/12_ui.unity
-    guid: eeb710ec9959943af85577a8012941d6
+    path: Assets/Scenes/Prototypes/14_prova_elve.unity
+    guid: f7958d85bb9e14576b6e17004efed4af
   - enabled: 1
-    path: Assets/Scenes/Prototypes/9_palla.unity
-    guid: ef841ebb9ee4f4a11b491cce0a3ac6de
+    path: Assets/Scenes/Prototypes/4_letter.unity
+    guid: 6004ee3d18d5941388bdf001507d9916
   m_configObjects: {}

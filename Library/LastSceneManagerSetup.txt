@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Levels/10_color_run_2.unity
+- path: Assets/11_ball_3.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

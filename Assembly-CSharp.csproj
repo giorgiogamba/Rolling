@@ -79,11 +79,14 @@
      <Compile Include="Assets\Scripts\ColorsController.cs" />
      <Compile Include="Assets\Scripts\CouplesController.cs" />
      <Compile Include="Assets\Scripts\LetterTrigController.cs" />
+     <Compile Include="Assets\Scripts\LevelLoader.cs" />
      <Compile Include="Assets\Scripts\ObjectiveController.cs" />
      <Compile Include="Assets\Scripts\ObsController.cs" />
      <Compile Include="Assets\Scripts\PlaneController.cs" />
      <Compile Include="Assets\Scripts\PlanesColorController.cs" />
      <Compile Include="Assets\Scripts\PointChecker.cs" />
+     <Compile Include="Assets\Scripts\Progress Scripts\AutomaticMovement.cs" />
+     <Compile Include="Assets\Scripts\Progress Scripts\StepController.cs" />
      <Compile Include="Assets\Scripts\RotationController.cs" />
      <Compile Include="Assets\Scripts\SphereController.cs" />
      <Compile Include="Assets\Scripts\StrikesCounterController.cs" />
