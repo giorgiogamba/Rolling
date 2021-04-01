@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 2490951672962951538}
   - component: {fileID: 2490951672962951536}
   m_Layer: 0
-  m_Name: BB8
+  m_Name: BB8_temp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  jumpForce: 4
+  jumpForce: 6
   jumpOffset: 0.3
   head: {fileID: 2490951671856138452}
 --- !u!1 &2490951673500293267

@@ -6,9 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Prototypes/14_prova_elve.unity
-    guid: f7958d85bb9e14576b6e17004efed4af
+    path: Assets/Scenes/FirstComplete/12_ui.unity
+    guid: cb4faa64fa1604dda8d522b4866a1450
   - enabled: 1
-    path: Assets/Scenes/Prototypes/4_letter.unity
-    guid: 6004ee3d18d5941388bdf001507d9916
+    path: Assets/Scenes/FirstComplete/1_AtoB.unity
+    guid: 5f32857a7b86640f2a3839a841696237
+  - enabled: 1
+    path: Assets/Scenes/FirstComplete/1to2.unity
+    guid: 39e96ce2b69be4f99aecbace68d2cd60
+  - enabled: 1
+    path: Assets/Scenes/Levels/3_couples_1.unity
+    guid: 6ec4cdc25c2aa40ecac20b21cafb3e0e
+  - enabled: 1
+    path: Assets/Scenes/FirstComplete/2to3.unity
+    guid: 659be677464af4e76bc5c9877ec27423
+  - enabled: 1
+    path: Assets/Scenes/FirstComplete/5_ball_1.unity
+    guid: 147c67b68cce74ba28c7ed8a03bfa75c
   m_configObjects: {}

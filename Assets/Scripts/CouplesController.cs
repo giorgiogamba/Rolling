@@ -14,20 +14,14 @@ public class CouplesController : MonoBehaviour
                                      //materials size can be objects/2
     private List<GameObject> buffer;
     private int totcouples = 0;
+    private int totobjects;
 
     void Start()
     {
+        totobjects = objects.Count;
         totcouples = objects.Count / 2;
-        //InitializeCouples();
-
-        //Assigning CoupleMaterials to objects
-        for (int j = 0; j < objects.Capacity; j++) {
-            //objects[j].GetComponent<Renderer>().material = materials[j];
-            GameObject img = objects[j].transform.Find("Image").gameObject;
-            img.GetComponent<Renderer>().material = materials[j];
-        }
+        InitializeCouples();
         buffer = new List<GameObject>();
-        
     }
 
     void Update()
@@ -87,32 +81,49 @@ public class CouplesController : MonoBehaviour
         //Questo codice deve
         //1) Selezionare in modo randomico i materiali -> modificare la lista di materiali affinchè contenga
         //al proprio interno tutti i possibili materiali assegnabili alle coppie
-        /*int temp = totcouples; //numero totali di numeri da generare
+
+        //Se ci sono n totcouples, allora ci sono nx2 totoggetti
+        int temp = totcouples; //numero totali di numeri da generare
         System.Random randgen = new System.Random();
         List<int> indexes = new List<int>();
         while (temp > 0) {
             //Scelgo un numero randomico tra 0 e (totoggetti - 1)
-            int tempnum = randgen.Next(0, (totcouples-1));
+            int tempnum = randgen.Next(0, (totobjects-1));
             
             //Controllo se il numero è già stato prelevato
             if (!indexes.Contains(tempnum)) {
-                Debug.Log("Contiene");
                 indexes.Add(tempnum);
+                indexes.Add(tempnum); //Ne aggiungo 2 perchè così ho la coppia
                 temp --;
             }
-        }*/
-
-        //2) Assegnare in modo randomico i materiali
-        //System.Random randgen = System.Random();
-        for (int j = 0; j < objects.Capacity; j++) {
-
-
-
-            //objects[j].GetComponent<Renderer>().material = materials[j];
-            GameObject img = objects[j].transform.Find("Image").gameObject;
-            img.GetComponent<Renderer>().material = materials[j];
         }
 
+        //2) Assegnare in modo randomico i materiali
+        //Prelevo un elemento random dalla lista degli oggetti e vi assegno un materiale
+        //nella posizione di esplorazione della lista
+        //Segno inoltre l'indice della lista di oggetti utilizzato in una lista di supporto
+        //in modo da non riassegnare un materiale alla lista
+        List<int> temp_indexes = new List<int>();
+
+        //Controllo che il numero di indici che ho a disposizione e il numero di oggetti
+        //Che devo assegnare sia uguale
+        Debug.Log("Controllo dimensioni");
+        Debug.Log(indexes.Count == totobjects);
+        Debug.Log("Materials ha un numero di materiali pari a "+materials.Count); //2
+        //Temp_indexes contiene gli indici estratti finora. Questo devono essere in numero
+        //pari al numero di oggetti a cui assegnare il materiale
+        while (temp_indexes.Count <= totobjects) {
+            int num = randgen.Next(0, totobjects-1); //numero è in indice che fa riferimento
+            //sia alla lista di oggetti che alla lista di indici "indexes"
+            if (!temp_indexes.Contains(num)) { //Se non ho ancora estratto qesto "num"
+                temp_indexes.Add(num);
+                int nuovo_indice = indexes[num];
+                Debug.Log("Calcolo indice, che vale: "+nuovo_indice);
+                Debug.Log("Assegnamento materiale: "+num);
+                objects[num].GetComponent<Renderer>().material = materials[nuovo_indice];
+            }
+        }
+        Debug.Log("Fine assegnamento");
     }
 
 }

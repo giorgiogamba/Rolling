@@ -2,9 +2,9 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-class LevelLoader : MonoBehaviour {
+public class LevelLoader : MonoBehaviour {
     public Animator transition;
-    public int transitionTime;
+    public float transitionTime; //tempo che èassa prima che venga caricata la prossima scena
 
     void Update () {
         //if si avvera la condizione per il passaggio al prossimo livello

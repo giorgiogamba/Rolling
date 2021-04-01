@@ -90,6 +90,7 @@
      <Compile Include="Assets\Scripts\RotationController.cs" />
      <Compile Include="Assets\Scripts\SphereController.cs" />
      <Compile Include="Assets\Scripts\StrikesCounterController.cs" />
+     <Compile Include="Assets\Scripts\Tests\ProvaRand.cs" />
      <Compile Include="Assets\Scripts\TimeBarController.cs" />
      <Compile Include="Assets\Scripts\UIScripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\WallBounceController.cs" />
