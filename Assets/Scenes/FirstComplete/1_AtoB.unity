@@ -1483,12 +1483,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1776421830}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1321951343 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8453088320536495349, guid: 327db78bf7113457fb915b29183bcf7b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1776421830}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1352447725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,6 +1788,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 327db78bf7113457fb915b29183bcf7b, type: 3}
+--- !u!1 &1776421831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 42579327703639678, guid: 327db78bf7113457fb915b29183bcf7b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1776421830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1776421832 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7629792822541793250, guid: 327db78bf7113457fb915b29183bcf7b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1776421830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1783647223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1887,12 +1893,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783647223}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1908030580 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8453088320550603350, guid: 327db78bf7113457fb915b29183bcf7b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1776421830}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1934006271
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,12 +2239,12 @@ PrefabInstance:
         type: 3}
       propertyPath: message
       value: 
-      objectReference: {fileID: 1321951343}
+      objectReference: {fileID: 1776421832}
     - target: {fileID: 4681457452956665484, guid: afcf1981054a048b99c84b78c946e47c,
         type: 3}
       propertyPath: completed_message
       value: 
-      objectReference: {fileID: 1908030580}
+      objectReference: {fileID: 1776421831}
     - target: {fileID: 4681457453909683082, guid: afcf1981054a048b99c84b78c946e47c,
         type: 3}
       propertyPath: m_Name

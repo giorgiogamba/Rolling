@@ -89,6 +89,7 @@
      <Compile Include="Assets\Scripts\Progress Scripts\StepController.cs" />
      <Compile Include="Assets\Scripts\RotationController.cs" />
      <Compile Include="Assets\Scripts\SphereController.cs" />
+     <Compile Include="Assets\Scripts\StarRotation.cs" />
      <Compile Include="Assets\Scripts\StrikesCounterController.cs" />
      <Compile Include="Assets\Scripts\Tests\ProvaRand.cs" />
      <Compile Include="Assets\Scripts\TimeBarController.cs" />

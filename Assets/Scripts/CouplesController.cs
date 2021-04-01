@@ -20,8 +20,8 @@ public class CouplesController : MonoBehaviour
     {
         totobjects = objects.Count;
         totcouples = objects.Count / 2;
-        InitializeCouples();
         buffer = new List<GameObject>();
+        InitializeCouples();
     }
 
     void Update()
@@ -103,24 +103,39 @@ public class CouplesController : MonoBehaviour
         //nella posizione di esplorazione della lista
         //Segno inoltre l'indice della lista di oggetti utilizzato in una lista di supporto
         //in modo da non riassegnare un materiale alla lista
-        List<int> temp_indexes = new List<int>();
+        List<int> extracted_objs = new List<int>();
 
         //Controllo che il numero di indici che ho a disposizione e il numero di oggetti
         //Che devo assegnare sia uguale
         Debug.Log("Controllo dimensioni");
         Debug.Log(indexes.Count == totobjects);
+        for (int i = 0; i < indexes.Count; i ++) {
+            Debug.Log(indexes[i]);
+        }
+
         Debug.Log("Materials ha un numero di materiali pari a "+materials.Count); //2
+
         //Temp_indexes contiene gli indici estratti finora. Questo devono essere in numero
         //pari al numero di oggetti a cui assegnare il materiale
-        while (temp_indexes.Count <= totobjects) {
+        int index_index = 0;
+        while (extracted_objs.Count <= totobjects) {
             int num = randgen.Next(0, totobjects-1); //numero è in indice che fa riferimento
             //sia alla lista di oggetti che alla lista di indici "indexes"
-            if (!temp_indexes.Contains(num)) { //Se non ho ancora estratto qesto "num"
+            /*if (!temp_indexes.Contains(num)) { //Se non ho ancora estratto qesto "num"
                 temp_indexes.Add(num);
                 int nuovo_indice = indexes[num];
-                Debug.Log("Calcolo indice, che vale: "+nuovo_indice);
-                Debug.Log("Assegnamento materiale: "+num);
+                Debug.Log("Calcolo num, che vale: "+num);
+                Debug.Log("Calcolo nuovo_indice, che vale: "+nuovo_indice);
                 objects[num].GetComponent<Renderer>().material = materials[nuovo_indice];
+            }*/
+            if (!extracted_objs.Contains(num)) {
+                extracted_objs.Add(num);
+
+                //Assegnamento materiale
+                objects[num].GetComponent<Renderer>().material = materials[indexes[index_index]];
+
+                Debug.Log("Ho assegnato il materiale "+num+" con l'indice "+index_index);
+                index_index ++;
             }
         }
         Debug.Log("Fine assegnamento");
