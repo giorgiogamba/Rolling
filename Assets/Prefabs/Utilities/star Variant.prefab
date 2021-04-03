@@ -13,6 +13,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!64 &8124401286143570007
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5799066360425118024}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5801228030656462994, guid: 7f23dd66c3bb24dd28a37a74c5f391b4, type: 3}
+--- !u!114 &6258161785080612210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5799066360425118024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c1e6f158f1c549f582afa702139c191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelLoader: {fileID: 0}
+  timeBarController: {fileID: 0}
 --- !u!1001 &6681941003404002329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98,7 +126,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f23dd66c3bb24dd28a37a74c5f391b4,
         type: 3}
       propertyPath: m_Name
-      value: star
+      value: star Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f23dd66c3bb24dd28a37a74c5f391b4, type: 3}

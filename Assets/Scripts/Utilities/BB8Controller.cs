@@ -22,8 +22,8 @@ public class BB8Controller : MonoBehaviour
     void FixedUpdate()
     {
         Jump();
-        float horizontal = Input.GetAxis("HorizontalKey");
-        float vertical = Input.GetAxis("VerticalKey");
+        float horizontal = Input.GetAxis("VerticalKey");
+        float vertical = Input.GetAxis("HorizontalKey");
 
         rb.AddForce(Vector3.forward * speed * vertical);
         rb.AddForce(Vector3.right * speed * horizontal);
@@ -43,7 +43,8 @@ public class BB8Controller : MonoBehaviour
         {
             if (Input.GetButtonDown("Jump"))
             {
-                rb.AddForce(new Vector3(0f, jumpForce, 0f), ForceMode.Impulse);
+                //rb.AddForce(new Vector3(0f, jumpForce, 0f));
+                rb.velocity = Vector3.up * jumpForce;
             }
         }  
     }
