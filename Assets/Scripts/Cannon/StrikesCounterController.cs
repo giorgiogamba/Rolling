@@ -7,7 +7,7 @@ using TMPro;
 
 public class StrikesCounterController : MonoBehaviour
 {
-
+    public LevelLoader ll;
     public int count;
     public int total;
     private TMP_Text text;
@@ -28,6 +28,7 @@ public class StrikesCounterController : MonoBehaviour
         text.text = System.Convert.ToString(count) + " OUT OF " + System.Convert.ToString(total);
         if (count == total) {
             Camera.main.GetComponent<TimeBarController>().Completed();
+            ll.LoadNextLevel();
         }
     }
 

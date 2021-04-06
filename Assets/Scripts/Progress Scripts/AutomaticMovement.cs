@@ -26,10 +26,10 @@ public class AutomaticMovement : MonoBehaviour
         //NB: assunto che il movimento possa avvenire solamente sull'asse x o z, non contemporaneamente
         //NB2: se si modificano sia x che z, allora l'oggetto non si ferma a causa del calcolo della magnitudo
         //Questo è da tenere in conto quando magari si vorrà fare un passaggio in salita che modifica anche y
-        if (direction.x > 0) {
-            rb.velocity = new Vector3(1 * speed, 0, 0);
-        } else if (direction.z > 0) {
-            rb.velocity = new Vector3(0, 0, 1 * speed);
+        if (direction.x != 0) {
+            rb.velocity = new Vector3(1 * speed * direction.x, 0, 0);
+        } else if (direction.z != 0) {
+            rb.velocity = new Vector3(0, 0, 1 * speed * direction.z);
         }
     }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlanesColorController : MonoBehaviour
 {
-
+    public LevelLoader ll;
     public List<GameObject> planes;
     private int totplanes;
 
@@ -31,7 +31,12 @@ public class PlanesColorController : MonoBehaviour
             GetComponent<TimeBarController>().Completed();
             for (int j = 0; j < planes.Count; j++) {
                 planes[j].GetComponent<PlaneController>().enabled = false;
+                
+                //making planes yellow
+                Material mat = planes[j].GetComponent<Renderer>().material;
+                mat.color = Color.yellow;
             }
+            ll.LoadNextLevel();
         }
     }
 }

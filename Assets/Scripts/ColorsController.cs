@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class ColorsController : MonoBehaviour
 {
-
+    public LevelLoader ll;
     public List<Image> colors; // a ogni esecuzione deve essere inizializzato in maniera random
     public List<GameObject> objs;
-    public TimeBarController tbc;
+    private TimeBarController tbc;
     private int index = 0;
     private int correct = 0;
     private int colors_size = 0;
@@ -25,6 +25,9 @@ public class ColorsController : MonoBehaviour
         }
         colors_size = colors.Count;
         tbc = GetComponent<TimeBarController>();
+        if (tbc == null) {
+            Debug.Log("Time Bar Controller è null");
+        }
     }
 
     public void CheckColor(Material mat) {
@@ -36,6 +39,7 @@ public class ColorsController : MonoBehaviour
         }
         else {
             Debug.Log("SBAGLIATO");
+            //implementare l'annullamento delle operazioni nel caso in cui si sbagli ordine
         }
     }
 
@@ -44,6 +48,7 @@ public class ColorsController : MonoBehaviour
     {
         if (correct == colors_size) {
             tbc.Completed();
+            ll.LoadNextLevel();
         }
     }
 }
