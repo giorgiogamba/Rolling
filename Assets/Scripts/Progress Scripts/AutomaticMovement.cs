@@ -8,29 +8,14 @@ public class AutomaticMovement : MonoBehaviour
     public Vector3 end_position;
     public GameObject head;
     public float speed;
+    public float transitionTime = 5f;
 
     private Rigidbody rb;
     private Vector3 start_position;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        
-        //Prelevo la posizione di partenza
-        start_position = transform.position;
-
-        //Calcolo della direzione
-        Vector3 direction = end_position - start_position;
-            
-        //Avvio movimento
-        //NB: assunto che il movimento possa avvenire solamente sull'asse x o z, non contemporaneamente
-        //NB2: se si modificano sia x che z, allora l'oggetto non si ferma a causa del calcolo della magnitudo
-        //Questo è da tenere in conto quando magari si vorrà fare un passaggio in salita che modifica anche y
-        if (direction.x != 0) {
-            rb.velocity = new Vector3(1 * speed * direction.x, 0, 0);
-        } else if (direction.z != 0) {
-            rb.velocity = new Vector3(0, 0, 1 * speed * direction.z);
-        }
+        StartCoroutine(Wait());
     }
 
     void Update()
@@ -43,5 +28,28 @@ public class AutomaticMovement : MonoBehaviour
             rb.angularVelocity = Vector3.zero;
         }
             
+    }
+
+    IEnumerator Wait() {
+
+        rb = GetComponent<Rigidbody>();
+        
+        //Prelevo la posizione di partenza
+        start_position = transform.position;
+
+        //Calcolo della direzione
+        Vector3 direction = end_position - start_position;
+
+        yield return new WaitForSeconds(transitionTime);
+            
+        //Avvio movimento
+        //NB: assunto che il movimento possa avvenire solamente sull'asse x o z, non contemporaneamente
+        //NB2: se si modificano sia x che z, allora l'oggetto non si ferma a causa del calcolo della magnitudo
+        //Questo è da tenere in conto quando magari si vorrà fare un passaggio in salita che modifica anche y
+        if (direction.x != 0) {
+            rb.velocity = new Vector3(1 * speed * direction.x, 0, 0);
+        } else if (direction.z != 0) {
+            rb.velocity = new Vector3(0, 0, 1 * speed * direction.z);
+        }
     }
 }

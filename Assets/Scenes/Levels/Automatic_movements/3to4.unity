@@ -194,6 +194,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2991899676004521945, guid: f2ce498793fee4456b4aba44bd209839,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 27dfe448ed1eb4477b3cb7abf0e9020e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2ce498793fee4456b4aba44bd209839, type: 3}
 --- !u!1001 &607752648
@@ -725,6 +731,11 @@ PrefabInstance:
       propertyPath: ll
       value: 
       objectReference: {fileID: 1730078821}
+    - target: {fileID: 147340197137298526, guid: 4ae9c52a3754843808ab0214bdbf8df4,
+        type: 3}
+      propertyPath: disabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ae9c52a3754843808ab0214bdbf8df4, type: 3}
 --- !u!1001 &1253716688
@@ -1354,6 +1365,16 @@ PrefabInstance:
         type: 3}
       propertyPath: end_position.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 368869866018906056, guid: 1187b04ec4e9346b7b2458ea5b340761,
+        type: 3}
+      propertyPath: speed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 368869866018906056, guid: 1187b04ec4e9346b7b2458ea5b340761,
+        type: 3}
+      propertyPath: transitionTime
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1187b04ec4e9346b7b2458ea5b340761, type: 3}

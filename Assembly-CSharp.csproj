@@ -69,7 +69,6 @@
      <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
-     <Compile Include="Assets\PlatformTrigger.cs" />
      <Compile Include="Assets\Scripts\Cannon\CannonController.cs" />
      <Compile Include="Assets\Scripts\Cannon\CannonCursorController.cs" />
      <Compile Include="Assets\Scripts\Cannon\ObsController.cs" />
@@ -80,6 +79,7 @@
      <Compile Include="Assets\Scripts\ColorTrigger.cs" />
      <Compile Include="Assets\Scripts\ColorsController.cs" />
      <Compile Include="Assets\Scripts\CouplesController.cs" />
+     <Compile Include="Assets\Scripts\PlatformTrigger.cs" />
      <Compile Include="Assets\Scripts\Progress Scripts\AutomaticMovement.cs" />
      <Compile Include="Assets\Scripts\Progress Scripts\StepController.cs" />
      <Compile Include="Assets\Scripts\RotationController.cs" />
@@ -93,6 +93,7 @@
      <Compile Include="Assets\Scripts\UIScripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Utilities\BB8Controller.cs" />
      <Compile Include="Assets\Scripts\Utilities\LevelLoader.cs" />
+     <Compile Include="Assets\Scripts\Utilities\Scoring.cs" />
      <Compile Include="Assets\Scripts\Utilities\StarController.cs" />
      <Compile Include="Assets\Scripts\Utilities\StarRotation.cs" />
      <Compile Include="Assets\Scripts\Utilities\TimeBarController.cs" />

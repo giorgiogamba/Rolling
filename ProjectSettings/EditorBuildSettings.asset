@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Automatic_movements/9toEND.unity
     guid: a235d9f27571c464893c1e4db7eadf0d
+  - enabled: 1
+    path: Assets/Scenes/Levels/UI/2_restart.unity
+    guid: e25a1c43031154e9f8c2786a063c279b
   m_configObjects: {}
