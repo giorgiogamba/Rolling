@@ -2,27 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using ExtensionsMethods;
 
 public class ColorsController : MonoBehaviour
 {
     public LevelLoader ll;
-    public List<Image> colors; // a ogni esecuzione deve essere inizializzato in maniera random
-    public List<GameObject> objs;
+    public List<Image> canvas;
+    public List<Image> colors;
+    public List<GameObject> objs; //boxes
     private TimeBarController tbc;
     private int index = 0;
     private int correct = 0;
     private int colors_size = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
-        int i = 0;
-        foreach (Image img in colors) {
-            GameObject go = objs[i];
-            Material mat = go.GetComponent<Renderer>().material;
-            mat.color = img.color;
-            i++;
-        }
+        Init();
         colors_size = colors.Count;
         tbc = GetComponent<TimeBarController>();
         if (tbc == null) {
@@ -30,8 +25,34 @@ public class ColorsController : MonoBehaviour
         }
     }
 
+    //Initializes randomly canvas and objs
+    private void Init() {
+
+        //Creating a list of indexes
+        int a = 0;
+        List<int> indexes = new List<int>();
+        while (a < colors.Count) {
+            indexes.Add(a);
+            a ++;
+        }
+
+        indexes.Shuffle(); //shuffling indexes list
+
+        //Assigning colors to canvas
+        for (int i = 0; i < canvas.Count; i ++) {
+            canvas[i].color = colors[indexes[i]].color;
+        }
+
+        //Assigning colors to objs
+        indexes.Shuffle();
+        for (int i = 0; i < canvas.Count; i ++) {
+            objs[i].GetComponent<Renderer>().material.color = colors[indexes[i]].color;
+        }
+
+    }
+
     public void CheckColor(Material mat) {
-        if (mat.color == colors[index].color)
+        if (mat.color == canvas[index].color)
         {
             mat.color = Color.yellow; //changing objs color
             index++; //Updating order index
@@ -43,7 +64,6 @@ public class ColorsController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (correct == colors_size) {

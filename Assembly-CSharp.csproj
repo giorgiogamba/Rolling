@@ -79,6 +79,7 @@
      <Compile Include="Assets\Scripts\ColorTrigger.cs" />
      <Compile Include="Assets\Scripts\ColorsController.cs" />
      <Compile Include="Assets\Scripts\CouplesController.cs" />
+     <Compile Include="Assets\Scripts\MyExtensions.cs" />
      <Compile Include="Assets\Scripts\PlatformTrigger.cs" />
      <Compile Include="Assets\Scripts\Progress Scripts\AutomaticMovement.cs" />
      <Compile Include="Assets\Scripts\Progress Scripts\StepController.cs" />
