@@ -5,7 +5,6 @@ using UnityEngine;
 [RequireComponent(typeof(CouplesController))]
 public class RotationController : MonoBehaviour
 {
-
     public bool enabled = true;
 
     private void OnTriggerEnter(Collider other)
@@ -15,7 +14,7 @@ public class RotationController : MonoBehaviour
             Debug.Log("GIRO");
             transform.parent.Rotate(new Vector3(180, 0, 0));
             enabled = false;
-
+        
             //notificare che la mattonella si è girata
             Camera.main.GetComponent<CouplesController>().InsertInBuffer(transform.parent.gameObject);
         }
