@@ -92,7 +92,9 @@
      <Compile Include="Assets\Scripts\Tests\ProvaRand.cs" />
      <Compile Include="Assets\Scripts\Tests\SphereController.cs" />
      <Compile Include="Assets\Scripts\UIScripts\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\UIScripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Utilities\BB8Controller.cs" />
+     <Compile Include="Assets\Scripts\Utilities\InputManagement.cs" />
      <Compile Include="Assets\Scripts\Utilities\LevelLoader.cs" />
      <Compile Include="Assets\Scripts\Utilities\Scoring.cs" />
      <Compile Include="Assets\Scripts\Utilities\StarController.cs" />

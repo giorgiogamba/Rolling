@@ -1832,6 +1832,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 720044612076079186, guid: f2ce498793fee4456b4aba44bd209839,
+        type: 3}
+      propertyPath: m_text
+      value: MAKE ALL THE RED TILES BLACK!
+      objectReference: {fileID: 0}
     - target: {fileID: 2991899675576435162, guid: f2ce498793fee4456b4aba44bd209839,
         type: 3}
       propertyPath: m_Name
@@ -1891,6 +1896,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644117207771033284, guid: f2ce498793fee4456b4aba44bd209839,
+        type: 3}
+      propertyPath: m_text
+      value: LEVEL 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090892928358053258, guid: f2ce498793fee4456b4aba44bd209839,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2ce498793fee4456b4aba44bd209839, type: 3}

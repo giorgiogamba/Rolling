@@ -33,11 +33,16 @@ public class TimeBarController : MonoBehaviour
     void Update() {
         Transform sphere = player.transform.Find("Sphere");
         if (sphere != null && (sphere.position.y < -5f)) {
-            Debug.Log("Player is out of the field");
-            LeanTween.cancel(actionid); //locking bar movement
-            showOutOfTheFieldMessage();
-            ManageFailure();
+            StartCoroutine(OutOfTheFieldRoutine());
         }
+    }
+
+    IEnumerator OutOfTheFieldRoutine() {
+        Debug.Log("Player is out of the field");
+        LeanTween.cancel(actionid); //locking bar movement
+        showOutOfTheFieldMessage();
+        yield return new WaitForSeconds(1);
+        ManageFailure();
     }
 
     public void AnimateBar() {

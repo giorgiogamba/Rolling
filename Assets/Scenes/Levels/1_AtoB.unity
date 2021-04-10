@@ -490,10 +490,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2991899676004521945, guid: f2ce498793fee4456b4aba44bd209839,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 27dfe448ed1eb4477b3cb7abf0e9020e,
+        type: 3}
     - target: {fileID: 2991899676613126763, guid: f2ce498793fee4456b4aba44bd209839,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644117207771033284, guid: f2ce498793fee4456b4aba44bd209839,
+        type: 3}
+      propertyPath: m_text
+      value: LEVEL 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2ce498793fee4456b4aba44bd209839, type: 3}
@@ -2175,7 +2186,7 @@ PrefabInstance:
     - target: {fileID: 4681457452956665484, guid: afcf1981054a048b99c84b78c946e47c,
         type: 3}
       propertyPath: time
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4681457452956665484, guid: afcf1981054a048b99c84b78c946e47c,
         type: 3}

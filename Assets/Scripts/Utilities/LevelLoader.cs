@@ -38,7 +38,15 @@ public class LevelLoader : MonoBehaviour {
         } else {
             Debug.Log("End of the number of tries");
             //Richiamo della scena di restart
-            SceneManager.LoadScene("Scenes/Levels/UI/2_restart");
+            StartCoroutine(RestartLevel());
         }
+    }
+
+    IEnumerator RestartLevel() {
+        transition.SetTrigger("Start");
+        Debug.Log("Ho fatto partire l'anumazione");
+        yield return new WaitForSeconds(transitionTime);
+        Debug.Log("Ricarico");
+        SceneManager.LoadScene("Scenes/Levels/UI/2_restart");
     }
 }
