@@ -10,6 +10,7 @@ public class ColorsController : MonoBehaviour
     public List<Image> canvas;
     public List<Image> colors;
     public List<GameObject> objs; //boxes
+    public List<GameObject> yellow_canvas;
     private TimeBarController tbc;
     private int index = 0;
     private int correct = 0;
@@ -22,6 +23,9 @@ public class ColorsController : MonoBehaviour
         tbc = GetComponent<TimeBarController>();
         if (tbc == null) {
             Debug.Log("Time Bar Controller è null");
+        }
+        for (int i = 0; i < yellow_canvas.Count; i ++) {
+            yellow_canvas[i].SetActive(false);
         }
     }
 
@@ -54,6 +58,7 @@ public class ColorsController : MonoBehaviour
     public void CheckColor(Material mat) {
         if (mat.color == canvas[index].color)
         {
+            yellow_canvas[index].SetActive(false);    
             mat.color = Color.yellow; //changing objs color
             index++; //Updating order index
             correct ++; //updating number of correct colors
@@ -66,6 +71,10 @@ public class ColorsController : MonoBehaviour
 
     void Update()
     {
+        if (index < canvas.Count) {
+            yellow_canvas[index].SetActive(true);
+        }
+        
         if (correct == colors_size) {
             tbc.Completed();
             ll.LoadNextLevel();

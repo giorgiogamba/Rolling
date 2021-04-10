@@ -69,6 +69,7 @@
      <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
+     <Compile Include="Assets\OptionsMenu.cs" />
      <Compile Include="Assets\Scripts\Cannon\CannonController.cs" />
      <Compile Include="Assets\Scripts\Cannon\CannonCursorController.cs" />
      <Compile Include="Assets\Scripts\Cannon\ObsController.cs" />
@@ -78,6 +79,7 @@
      <Compile Include="Assets\Scripts\ColorRun\PlanesColorController.cs" />
      <Compile Include="Assets\Scripts\ColorTrigger.cs" />
      <Compile Include="Assets\Scripts\ColorsController.cs" />
+     <Compile Include="Assets\Scripts\CommandsMenu.cs" />
      <Compile Include="Assets\Scripts\CouplesController.cs" />
      <Compile Include="Assets\Scripts\MyExtensions.cs" />
      <Compile Include="Assets\Scripts\PlatformTrigger.cs" />

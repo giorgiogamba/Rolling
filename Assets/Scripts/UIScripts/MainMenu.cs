@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void QuitGame() {
+    public void ExitGame() {
         Debug.Log("Quitted");
         Application.Quit();
     }
@@ -21,5 +21,13 @@ public class MainMenu : MonoBehaviour
     public void PlayAgain() {
         Scoring.ResetTries();
         SceneManager.LoadScene(1);
+    }
+
+    public void Commands() {
+        SceneManager.LoadScene("4_commands");
+    }
+
+    public void Options() {
+        SceneManager.LoadScene("5_options");
     }
 }

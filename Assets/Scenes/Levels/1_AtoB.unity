@@ -2286,6 +2286,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6258161785080612210, guid: bad30480b7df444fbae6a65dfc08ed95,
         type: 3}
+      propertyPath: spawn_points.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6258161785080612210, guid: bad30480b7df444fbae6a65dfc08ed95,
+        type: 3}
       propertyPath: levelLoader
       value: 
       objectReference: {fileID: 832716831}
@@ -2294,20 +2299,35 @@ PrefabInstance:
       propertyPath: timeBarController
       value: 
       objectReference: {fileID: 4681457454443063875}
+    - target: {fileID: 6258161785080612210, guid: bad30480b7df444fbae6a65dfc08ed95,
+        type: 3}
+      propertyPath: spawn_points.Array.data[0]
+      value: 
+      objectReference: {fileID: 6681941003818213952}
+    - target: {fileID: 6258161785080612210, guid: bad30480b7df444fbae6a65dfc08ed95,
+        type: 3}
+      propertyPath: spawn_points.Array.data[1]
+      value: 
+      objectReference: {fileID: 6681941003818213952}
+    - target: {fileID: 6258161785080612210, guid: bad30480b7df444fbae6a65dfc08ed95,
+        type: 3}
+      propertyPath: spawn_points.Array.data[2]
+      value: 
+      objectReference: {fileID: 6681941003818213952}
     - target: {fileID: 6571240648588796914, guid: bad30480b7df444fbae6a65dfc08ed95,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.574
+      value: -0.97
       objectReference: {fileID: 0}
     - target: {fileID: 6571240648588796914, guid: bad30480b7df444fbae6a65dfc08ed95,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.471
+      value: 3.44
       objectReference: {fileID: 0}
     - target: {fileID: 6571240648588796914, guid: bad30480b7df444fbae6a65dfc08ed95,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.513
+      value: 2.24
       objectReference: {fileID: 0}
     - target: {fileID: 6571240648588796914, guid: bad30480b7df444fbae6a65dfc08ed95,
         type: 3}
@@ -2351,3 +2371,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bad30480b7df444fbae6a65dfc08ed95, type: 3}
+--- !u!4 &6681941003818213952 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6571240648588796914, guid: bad30480b7df444fbae6a65dfc08ed95,
+    type: 3}
+  m_PrefabInstance: {fileID: 6681941003818213951}
+  m_PrefabAsset: {fileID: 0}
