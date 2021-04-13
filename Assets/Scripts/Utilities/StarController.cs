@@ -7,11 +7,19 @@ public class StarController : MonoBehaviour
     public LevelLoader levelLoader;
     public TimeBarController timeBarController;
     public List<Transform> spawn_points;
+    public string nextLevelPath;
+    public bool returnToHUB = false;
 
     private void OnTriggerEnter(Collider other) {
         Debug.Log("Obiettivo Raggiunto!");
         timeBarController.Completed();
-        levelLoader.LoadNextLevel();
+        //levelLoader.LoadNextLevel();
+        //levelLoader.LoadLevelName(levelName, level, false);
+        if (returnToHUB) {
+            levelLoader.ReturnToHub();
+        } else {
+            levelLoader.LoadLevelName(nextLevelPath);
+        }
     }
 
     private void Start() {

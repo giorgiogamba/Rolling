@@ -5,6 +5,7 @@ using ExtensionsMethods;
 
 public class CouplesController : MonoBehaviour
 {
+    public LevelLoader levelLoader;
     public List<GameObject> objects; //total elements in the scene
     public List<Material> materials; //materials assigned to the couple elements in "objects"
                                      //materials list size is objects/2
@@ -12,6 +13,8 @@ public class CouplesController : MonoBehaviour
     private int totcouples = 0;
     private int totobjects;
     private bool stop;
+    public bool returnToHUB = false;
+    public string nextLevelPath;
 
     void Start()
     {
@@ -55,8 +58,12 @@ public class CouplesController : MonoBehaviour
 
         //All the couples are turned, termination step
         if (totcouples == 0) {
-            Debug.Log("FINE");
             GetComponent<TimeBarController>().Completed();
+            if (returnToHUB) {
+                levelLoader.ReturnToHub();
+            } else {
+                levelLoader.LoadLevelName(nextLevelPath);
+            }
         }
     }
 

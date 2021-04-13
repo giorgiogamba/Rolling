@@ -11,6 +11,8 @@ public class ColorsController : MonoBehaviour
     public List<Image> colors;
     public List<GameObject> objs; //boxes
     public List<GameObject> yellow_canvas;
+    public bool returnToHUB;
+    public string nextLevelPath;
     private TimeBarController tbc;
     private int index = 0;
     private int correct = 0;
@@ -77,7 +79,11 @@ public class ColorsController : MonoBehaviour
         
         if (correct == colors_size) {
             tbc.Completed();
-            ll.LoadNextLevel();
+            if (returnToHUB) {
+                ll.ReturnToHub();
+            } else {
+                ll.LoadLevelName(nextLevelPath);
+            }
         }
     }
 }

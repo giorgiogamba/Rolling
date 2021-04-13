@@ -69,7 +69,6 @@
      <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
-     <Compile Include="Assets\OptionsMenu.cs" />
      <Compile Include="Assets\Scripts\Cannon\CannonController.cs" />
      <Compile Include="Assets\Scripts\Cannon\CannonCursorController.cs" />
      <Compile Include="Assets\Scripts\Cannon\ObsController.cs" />
@@ -79,9 +78,7 @@
      <Compile Include="Assets\Scripts\ColorRun\PlanesColorController.cs" />
      <Compile Include="Assets\Scripts\ColorTrigger.cs" />
      <Compile Include="Assets\Scripts\ColorsController.cs" />
-     <Compile Include="Assets\Scripts\CommandsMenu.cs" />
      <Compile Include="Assets\Scripts\CouplesController.cs" />
-     <Compile Include="Assets\Scripts\MyExtensions.cs" />
      <Compile Include="Assets\Scripts\PlatformTrigger.cs" />
      <Compile Include="Assets\Scripts\Progress Scripts\AutomaticMovement.cs" />
      <Compile Include="Assets\Scripts\Progress Scripts\StepController.cs" />
@@ -93,11 +90,15 @@
      <Compile Include="Assets\Scripts\Tests\ObjectiveController.cs" />
      <Compile Include="Assets\Scripts\Tests\ProvaRand.cs" />
      <Compile Include="Assets\Scripts\Tests\SphereController.cs" />
+     <Compile Include="Assets\Scripts\UIScripts\CommandsMenu.cs" />
      <Compile Include="Assets\Scripts\UIScripts\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\UIScripts\OptionsMenu.cs" />
      <Compile Include="Assets\Scripts\UIScripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Utilities\BB8Controller.cs" />
      <Compile Include="Assets\Scripts\Utilities\InputManagement.cs" />
+     <Compile Include="Assets\Scripts\Utilities\LauncherController.cs" />
      <Compile Include="Assets\Scripts\Utilities\LevelLoader.cs" />
+     <Compile Include="Assets\Scripts\Utilities\MyExtensions.cs" />
      <Compile Include="Assets\Scripts\Utilities\Scoring.cs" />
      <Compile Include="Assets\Scripts\Utilities\StarController.cs" />
      <Compile Include="Assets\Scripts\Utilities\StarRotation.cs" />

@@ -9,63 +9,60 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/UI/1_ui.unity
     guid: b06f4425729064982bfb5c1664d975b4
   - enabled: 1
-    path: Assets/Scenes/Levels/1_AtoB.unity
-    guid: 5f32857a7b86640f2a3839a841696237
-  - enabled: 1
-    path: Assets/Scenes/Levels/Automatic_movements/1to2.unity
-    guid: c3a2f3cecc90f451c8840b48d26e27b6
-  - enabled: 1
-    path: Assets/Scenes/Levels/5_ball_1.unity
-    guid: fbfeb8978978e4bd5ac4a8c21566edf5
-  - enabled: 1
-    path: Assets/Scenes/Levels/Automatic_movements/2to3.unity
-    guid: 64346a798f0ba4e7f8848707e3893e25
-  - enabled: 1
-    path: Assets/Scenes/Levels/9_color_run_1.unity
-    guid: 1cdff1c2c44924b5ebf27172824a47c2
-  - enabled: 1
-    path: Assets/Scenes/Levels/Automatic_movements/3to4.unity
-    guid: 1e930848793364f7ba8dd8f401869408
-  - enabled: 1
-    path: Assets/Scenes/Levels/2_AtoB_2.unity
-    guid: aaca6b5e7f5254f5b90f5aab7772cb7a
-  - enabled: 1
-    path: Assets/Scenes/Levels/Automatic_movements/4to5.unity
-    guid: f3254dcd5c5c54ab2ab4cde3e931bc33
-  - enabled: 1
-    path: Assets/Scenes/Levels/7_ball_2.unity
-    guid: 6101a362feb6b49a2be2d0539c726983
-  - enabled: 1
-    path: Assets/Scenes/Levels/Automatic_movements/5to6.unity
-    guid: 5c711131252f44a098a0d302697ef260
-  - enabled: 1
-    path: Assets/Scenes/Levels/8_order_1.unity
-    guid: 18735ebbc3d8b47708aee1bbe32e90ce
-  - enabled: 1
-    path: Assets/Scenes/Levels/Automatic_movements/6to7.unity
-    guid: f4a610c217bcd4400a9b6737358dd0b8
-  - enabled: 1
-    path: Assets/Scenes/Levels/10_color_run_2.unity
-    guid: 00842360f23d743d6ab9764e0df0bad9
-  - enabled: 1
-    path: Assets/Scenes/Levels/Automatic_movements/7to8.unity
-    guid: ad4be09a73d504a05adb58f93d51740e
-  - enabled: 1
-    path: Assets/Scenes/Levels/11_ball_3.unity
-    guid: 4d159fc6f69cb444bab2139b99a05e5b
-  - enabled: 1
-    path: Assets/Scenes/Levels/Automatic_movements/8to9.unity
-    guid: 5e9e232c59fd6425ba691f83e640582d
-  - enabled: 1
-    path: Assets/Scenes/Levels/12_AtoB_3.unity
-    guid: 76ce65a7f1a4f4adbbf851b38461307e
-  - enabled: 1
-    path: Assets/Scenes/Levels/Automatic_movements/9toEND.unity
-    guid: a235d9f27571c464893c1e4db7eadf0d
-  - enabled: 1
     path: Assets/Scenes/Levels/UI/2_restart.unity
     guid: e25a1c43031154e9f8c2786a063c279b
   - enabled: 1
     path: Assets/Scenes/Levels/UI/3_pause.unity
     guid: 3007ece5df46c4f96b91a4f8bbee1ab7
+  - enabled: 1
+    path: Assets/Scenes/Levels/UI/4_commands.unity
+    guid: 0f91302ad045b449c8e6ef0f13f3fecf
+  - enabled: 1
+    path: Assets/Scenes/Levels/UI/5_options.unity
+    guid: bdfd1d4ddbc954f1bad4594df51dcafb
+  - enabled: 1
+    path: Assets/Scenes/Levels/HUB/1_HUB.unity
+    guid: 023c16f2db9f4465f84d46b7d742c8dd
+  - enabled: 1
+    path: Assets/Scenes/Levels/1_AtoB.unity
+    guid: 5f32857a7b86640f2a3839a841696237
+  - enabled: 1
+    path: Assets/Scenes/Levels/2_AtoB_2.unity
+    guid: aaca6b5e7f5254f5b90f5aab7772cb7a
+  - enabled: 1
+    path: Assets/Scenes/Levels/12_AtoB_3.unity
+    guid: 76ce65a7f1a4f4adbbf851b38461307e
+  - enabled: 1
+    path: Assets/Scenes/Levels/3_couples_1.unity
+    guid: 6ec4cdc25c2aa40ecac20b21cafb3e0e
+  - enabled: 1
+    path: Assets/Scenes/Levels/4_couples_2.unity
+    guid: a7d410c3e2eaf404eb9df141af39bb97
+  - enabled: 1
+    path: Assets/Scenes/Levels/15_couples_3.unity
+    guid: 0e3e8556ccf2d4d11b2d546d515186d4
+  - enabled: 1
+    path: Assets/Scenes/Levels/5_ball_1.unity
+    guid: fbfeb8978978e4bd5ac4a8c21566edf5
+  - enabled: 1
+    path: Assets/Scenes/Levels/7_ball_2.unity
+    guid: 6101a362feb6b49a2be2d0539c726983
+  - enabled: 1
+    path: Assets/Scenes/Levels/11_ball_3.unity
+    guid: 4d159fc6f69cb444bab2139b99a05e5b
+  - enabled: 1
+    path: Assets/Scenes/Levels/9_color_run_1.unity
+    guid: 1cdff1c2c44924b5ebf27172824a47c2
+  - enabled: 1
+    path: Assets/Scenes/Levels/10_color_run_2.unity
+    guid: 00842360f23d743d6ab9764e0df0bad9
+  - enabled: 1
+    path: Assets/Scenes/Levels/8_order_1.unity
+    guid: 18735ebbc3d8b47708aee1bbe32e90ce
+  - enabled: 1
+    path: Assets/Scenes/Levels/13_color_order_2.unity
+    guid: cec2b5daf01b64ceca0d10ae955f4f76
+  - enabled: 1
+    path: Assets/Scenes/Levels/14_color_order_3.unity
+    guid: ba871759abb0c494799816e6e9f501dc
   m_configObjects: {}

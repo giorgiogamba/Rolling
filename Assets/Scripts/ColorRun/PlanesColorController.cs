@@ -7,6 +7,8 @@ public class PlanesColorController : MonoBehaviour
     public LevelLoader ll;
     public List<GameObject> planes;
     private int totplanes;
+    public bool returnToHUB = false;
+    public string nextLevelPath;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +38,13 @@ public class PlanesColorController : MonoBehaviour
                 Material mat = planes[j].GetComponent<Renderer>().material;
                 mat.color = Color.yellow;
             }
-            ll.LoadNextLevel();
+            //ll.LoadNextLevel();
+            //ll.LoadLevelName("10_color_run_2", "ColorRun", true);
+            if (returnToHUB) {
+                ll.ReturnToHub();
+            } else {
+                ll.LoadLevelName(nextLevelPath);
+            }
         }
     }
 }

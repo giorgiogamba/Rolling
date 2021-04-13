@@ -10,7 +10,8 @@ public class MainMenu : MonoBehaviour
     {
         Scoring.ResetTries();
         Debug.Log("Numero tentativi: "+Scoring.GetTries());
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Scenes/Levels/HUB/1_HUB");
     }
 
     public void ExitGame() {
