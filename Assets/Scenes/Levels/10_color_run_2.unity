@@ -3803,7 +3803,7 @@ MonoBehaviour:
   - {fileID: 1395536827}
   - {fileID: 1725440665}
   returnToHUB: 0
-  nextLevelPath: 
+  nextLevelPath: Scenes/Levels/16_color_run_3
 --- !u!1001 &927153584
 PrefabInstance:
   m_ObjectHideFlags: 0
