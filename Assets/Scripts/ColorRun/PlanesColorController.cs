@@ -41,6 +41,7 @@ public class PlanesColorController : MonoBehaviour
             //ll.LoadNextLevel();
             //ll.LoadLevelName("10_color_run_2", "ColorRun", true);
             if (returnToHUB) {
+                Trophies.TrophyCompleted("ColorRun");
                 ll.ReturnToHub();
             } else {
                 ll.LoadLevelName(nextLevelPath);

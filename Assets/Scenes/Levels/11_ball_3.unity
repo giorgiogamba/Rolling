@@ -11004,6 +11004,11 @@ PrefabInstance:
       propertyPath: returnToHUB
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6258161785080612210, guid: bad30480b7df444fbae6a65dfc08ed95,
+        type: 3}
+      propertyPath: gameName
+      value: Ball
+      objectReference: {fileID: 0}
     - target: {fileID: 6571240648588796914, guid: bad30480b7df444fbae6a65dfc08ed95,
         type: 3}
       propertyPath: m_LocalPosition.x

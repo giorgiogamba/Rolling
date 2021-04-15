@@ -9,7 +9,6 @@ public class WallBounceController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.tag);
         if (string.Equals("Wall", collision.gameObject.tag))
         {
             Vector3 direction = collision.contacts[0].point - transform.position;

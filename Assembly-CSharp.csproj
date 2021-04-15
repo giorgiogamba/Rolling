@@ -69,6 +69,7 @@
      <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
+     <Compile Include="Assets\Prova.cs" />
      <Compile Include="Assets\Scripts\Cannon\CannonController.cs" />
      <Compile Include="Assets\Scripts\Cannon\CannonCursorController.cs" />
      <Compile Include="Assets\Scripts\Cannon\ObsController.cs" />
@@ -104,6 +105,7 @@
      <Compile Include="Assets\Scripts\Utilities\StarRotation.cs" />
      <Compile Include="Assets\Scripts\Utilities\TimeBarController.cs" />
      <Compile Include="Assets\Scripts\WallBounceController.cs" />
+     <Compile Include="Assets\Trophies.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\LeanTween\ReadMe.txt" />

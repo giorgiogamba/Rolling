@@ -11,6 +11,7 @@ public class LevelLoader : MonoBehaviour {
     public GameObject textExit;
 
     void Start() {
+        Debug.Log("Level Load Started");
         if (disableTexts) {
             DisableTexts();
         } else{

@@ -80,6 +80,7 @@ public class ColorsController : MonoBehaviour
         if (correct == colors_size) {
             tbc.Completed();
             if (returnToHUB) {
+                Trophies.TrophyCompleted("ColorOrder");
                 ll.ReturnToHub();
             } else {
                 ll.LoadLevelName(nextLevelPath);

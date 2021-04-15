@@ -60,6 +60,7 @@ public class CouplesController : MonoBehaviour
         if (totcouples == 0) {
             GetComponent<TimeBarController>().Completed();
             if (returnToHUB) {
+                Trophies.TrophyCompleted("Couples");
                 levelLoader.ReturnToHub();
             } else {
                 levelLoader.LoadLevelName(nextLevelPath);
