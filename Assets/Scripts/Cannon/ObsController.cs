@@ -24,4 +24,19 @@ public class ObsController : MonoBehaviour
         }
 
     }
+    /*void OnCollisionEnter(Collision other) {
+        if (other.transform.parent.gameObject.tag == "Player") {
+            Debug.Log("parente");
+            other.transform.parent.SetParent(transform);
+        }
+    }
+
+    void OnCollisionExit(Collision other) {
+        if (other.transform.parent.gameObject.tag == "Player") {
+            Debug.Log("annullato");
+            other.transform.parent.SetParent(null);
+        }
+    }*/
+
+    
 }

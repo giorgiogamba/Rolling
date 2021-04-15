@@ -31,10 +31,11 @@ public class PauseMenu : MonoBehaviour
         InputManagement.EnableInput(); //Enabling character inputs
     }
 
-    public void Quit() {
+    public void BackToHUB() {
         //Closing previous game scene
         SceneManager.UnloadSceneAsync(sceneName);
-        SceneManager.LoadScene("1_ui"); //Loading start menu
+        Scoring.ResetTries();
+        SceneManager.LoadScene("Scenes/Levels/HUB/1_HUB"); //Loading start menu
 
     }
 }

@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obs19
       objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: OBS
+      objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -903,6 +908,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obs20
       objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: OBS
+      objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1011,6 +1021,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Obs32
+      objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
@@ -1242,6 +1257,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obs27
       objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: OBS
+      objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1412,6 +1432,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2490951672986017564, guid: c474546b2e82948e986ae342b51ac164,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2490951672986017565, guid: c474546b2e82948e986ae342b51ac164,
         type: 3}
       propertyPath: jumpForce
@@ -1435,6 +1460,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Obs36
+      objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: OBS
       objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
@@ -1550,6 +1580,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Obs17
+      objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: OBS
       objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
@@ -1908,6 +1943,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obs9
       objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: OBS
+      objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2016,6 +2056,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Obs23
+      objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: OBS
       objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
@@ -2397,6 +2442,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Obs22
+      objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: OBS
       objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
@@ -2959,6 +3009,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obs24
       objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: OBS
+      objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3206,6 +3261,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Obs40
+      objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: OBS
       objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
@@ -4222,6 +4282,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obs37
       objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: OBS
+      objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4330,6 +4395,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Obs14
+      objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: OBS
       objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
@@ -4514,6 +4584,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Obs28
+      objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: OBS
       objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
@@ -4860,6 +4935,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obs8
       objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: OBS
+      objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4976,6 +5056,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obs41
       objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: OBS
+      objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5090,6 +5175,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Obs39
+      objectReference: {fileID: 0}
+    - target: {fileID: 857128561421359479, guid: 1a67889d2a13e49808b80771d16bf1fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: OBS
       objectReference: {fileID: 0}
     - target: {fileID: 857128561421359480, guid: 1a67889d2a13e49808b80771d16bf1fa,
         type: 3}
