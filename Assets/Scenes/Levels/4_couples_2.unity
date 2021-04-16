@@ -1615,7 +1615,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: e24539c09042c4c7ab3983d9f5593f2a, type: 2}
   - {fileID: 2100000, guid: d689f63a75b244119a4753208cd594f7, type: 2}
   returnToHUB: 0
-  nextLevelPath: 
+  nextLevelPath: Scenes/Levels/15_couples_3
 --- !u!1001 &7362192555643038123
 PrefabInstance:
   m_ObjectHideFlags: 0

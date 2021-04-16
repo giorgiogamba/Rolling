@@ -15,8 +15,6 @@ public class StarController : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         Debug.Log("Obiettivo Raggiunto!");
         timeBarController.Completed();
-        //levelLoader.LoadNextLevel();
-        //levelLoader.LoadLevelName(levelName, level, false);
         if (returnToHUB) {
             Trophies.TrophyCompleted(gameName);
             Debug.Log("HO chiamato");

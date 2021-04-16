@@ -22,7 +22,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayAgain() {
         Scoring.ResetTries();
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Scenes/Levels/HUB/1_HUB");
     }
 
     public void Commands() {
@@ -31,5 +31,9 @@ public class MainMenu : MonoBehaviour
 
     public void Options() {
         SceneManager.LoadScene("5_options");
+    }
+
+    public void Quit() {
+        SceneManager.LoadScene("Scenes/Levels/UI/1_ui");
     }
 }

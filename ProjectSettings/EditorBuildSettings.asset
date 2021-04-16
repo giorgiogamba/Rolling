@@ -65,4 +65,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/14_color_order_3.unity
     guid: ba871759abb0c494799816e6e9f501dc
+  - enabled: 1
+    path: Assets/Scenes/Levels/16_color_run_3.unity
+    guid: 3f7d9a1dcea7f4a66b004c1b843cc517
   m_configObjects: {}

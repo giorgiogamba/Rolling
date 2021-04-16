@@ -34,8 +34,9 @@ public class PauseMenu : MonoBehaviour
     public void BackToHUB() {
         //Closing previous game scene
         SceneManager.UnloadSceneAsync(sceneName);
+        Resources.UnloadUnusedAssets();
         Scoring.ResetTries();
-        SceneManager.LoadScene("Scenes/Levels/HUB/1_HUB"); //Loading start menu
+        SceneManager.LoadScene("Scenes/Levels/HUB/1_HUB"); //Loading HUB
 
     }
 }

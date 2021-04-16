@@ -15,6 +15,7 @@ public class TimeBarController : MonoBehaviour
     private GameObject outOfTheFieldMessage;
     public LevelLoader ll;
     private int actionid;
+    private bool doneManageFailure = false;
     
     void Start()
     {
@@ -33,12 +34,15 @@ public class TimeBarController : MonoBehaviour
     void Update() {
         Transform sphere = player.transform.Find("Sphere");
         if (sphere != null && (sphere.position.y < -5f)) {
-            StartCoroutine(OutOfTheFieldRoutine());
+            if (doneManageFailure == false) {
+                StartCoroutine(OutOfTheFieldRoutine());
+                doneManageFailure = true;
+            }
+            
         }
     }
 
     IEnumerator OutOfTheFieldRoutine() {
-        Debug.Log("Player is out of the field");
         LeanTween.cancel(actionid); //locking bar movement
         showOutOfTheFieldMessage();
         yield return new WaitForSeconds(1);
@@ -67,6 +71,8 @@ public class TimeBarController : MonoBehaviour
 
     private void ManageFailure() {
         Scoring.LoseTry();
+        Debug.Log("ManageFailure -- tries rimasti: "+Scoring.GetTries());
+        Debug.Log("try deleted - ManageFailure");
         ll.TryAgain();
     }
 

@@ -57,16 +57,18 @@ public class ColorsController : MonoBehaviour
 
     }
 
-    public void CheckColor(Material mat) {
+    public bool CheckColor(Material mat) {
         if (mat.color == canvas[index].color)
         {
             yellow_canvas[index].SetActive(false);    
             mat.color = Color.yellow; //changing objs color
             index++; //Updating order index
             correct ++; //updating number of correct colors
+            return true;
         }
         else {
             Debug.Log("SBAGLIATO");
+            return false;
             //implementare l'annullamento delle operazioni nel caso in cui si sbagli ordine
         }
     }

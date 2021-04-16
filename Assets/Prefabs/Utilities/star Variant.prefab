@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &1756423720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5799066360425118024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9340e80095cf4f3d9c948e50ba302d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!64 &8124401286143570007
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27,6 +14,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5801228030656462994, guid: 7f23dd66c3bb24dd28a37a74c5f391b4, type: 3}
+--- !u!114 &1756423720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5799066360425118024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9340e80095cf4f3d9c948e50ba302d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!114 &6258161785080612210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41,6 +41,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelLoader: {fileID: 0}
   timeBarController: {fileID: 0}
+  spawn_points: []
+  nextLevelPath: 
+  returnToHUB: 0
+  gameName: 
 --- !u!1001 &6681941003404002329
 PrefabInstance:
   m_ObjectHideFlags: 0
