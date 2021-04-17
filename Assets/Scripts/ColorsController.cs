@@ -55,6 +55,8 @@ public class ColorsController : MonoBehaviour
             objs[i].GetComponent<Renderer>().material.color = colors[indexes[i]].color;
         }
 
+        Debug.Log("Colors initialized");
+
     }
 
     public bool CheckColor(Material mat) {
