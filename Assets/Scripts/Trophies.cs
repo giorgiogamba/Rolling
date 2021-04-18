@@ -52,5 +52,18 @@ public class Trophies : MonoBehaviour
         if (trophies.Count == 0) {
             Debug.Log("Trophies have not been initialized");
         }
+
+        //Checking if unlock the last level
+        int counter = 0;
+        for (int j = 0; j < trophies.Count; j ++) {
+            if (trophies[j].Item2 == 1) {
+                counter ++;
+            }
+        }
+
+        if (counter == trophies.Count) {
+            Debug.Log("Final Level Unlocked!");
+            Camera.main.GetComponent<FinalLevelPlaneController>().UnlockLevel();
+        }
     }
 }

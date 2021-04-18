@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Levels/17_final.unity
+- path: Assets/Scenes/Levels/HUB/1_HUB.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

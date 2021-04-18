@@ -27,6 +27,8 @@ public class TimeBarController : MonoBehaviour
         outOfTheFieldMessage = tbc.Find("OutOfTheFieldMessage").gameObject;
         if (outOfTheFieldMessage != null) {
             outOfTheFieldMessage.SetActive(false);
+        } else {
+            Debug.Log("TimeBarController: outOfTheFieldMessage is null");
         }
         AnimateBar();
     }

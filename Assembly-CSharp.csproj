@@ -36,7 +36,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\AutomaticCannon.cs" />
      <Compile Include="Assets\LeanTween\Examples\Archived\OldGUIExamplesCS.cs" />
      <Compile Include="Assets\LeanTween\Examples\Archived\TestingPunch.cs" />
      <Compile Include="Assets\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
@@ -70,6 +69,7 @@
      <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
+     <Compile Include="Assets\Scripts\AutomaticCannon.cs" />
      <Compile Include="Assets\Scripts\Cannon\CannonController.cs" />
      <Compile Include="Assets\Scripts\Cannon\CannonCursorController.cs" />
      <Compile Include="Assets\Scripts\Cannon\ObsController.cs" />
@@ -80,6 +80,10 @@
      <Compile Include="Assets\Scripts\ColorTrigger.cs" />
      <Compile Include="Assets\Scripts\ColorsController.cs" />
      <Compile Include="Assets\Scripts\CouplesController.cs" />
+     <Compile Include="Assets\Scripts\FinalLevel\FinalLevelColorTrigger.cs" />
+     <Compile Include="Assets\Scripts\FinalLevel\FinalLevelController.cs" />
+     <Compile Include="Assets\Scripts\FinalLevel\FinalLevelPlaneController.cs" />
+     <Compile Include="Assets\Scripts\PasspartoutController.cs" />
      <Compile Include="Assets\Scripts\PlatformTrigger.cs" />
      <Compile Include="Assets\Scripts\Progress Scripts\AutomaticMovement.cs" />
      <Compile Include="Assets\Scripts\Progress Scripts\StepController.cs" />
