@@ -69,7 +69,8 @@
      <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
-     <Compile Include="Assets\Scripts\AutomaticCannon.cs" />
+     <Compile Include="Assets\Scripts\Ball\KeyController.cs" />
+     <Compile Include="Assets\Scripts\Ball\WallBounceController.cs" />
      <Compile Include="Assets\Scripts\Cannon\CannonController.cs" />
      <Compile Include="Assets\Scripts\Cannon\CannonCursorController.cs" />
      <Compile Include="Assets\Scripts\Cannon\ObsController.cs" />
@@ -88,6 +89,7 @@
      <Compile Include="Assets\Scripts\Progress Scripts\AutomaticMovement.cs" />
      <Compile Include="Assets\Scripts\Progress Scripts\StepController.cs" />
      <Compile Include="Assets\Scripts\RotationController.cs" />
+     <Compile Include="Assets\Scripts\Tests\AutomaticCannon.cs" />
      <Compile Include="Assets\Scripts\Tests\CarController.cs" />
      <Compile Include="Assets\Scripts\Tests\CharController.cs" />
      <Compile Include="Assets\Scripts\Tests\CharControllerProva.cs" />
@@ -95,7 +97,6 @@
      <Compile Include="Assets\Scripts\Tests\ObjectiveController.cs" />
      <Compile Include="Assets\Scripts\Tests\ProvaRand.cs" />
      <Compile Include="Assets\Scripts\Tests\SphereController.cs" />
-     <Compile Include="Assets\Scripts\Trophies.cs" />
      <Compile Include="Assets\Scripts\UIScripts\CommandsMenu.cs" />
      <Compile Include="Assets\Scripts\UIScripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\UIScripts\OptionsMenu.cs" />
@@ -109,7 +110,7 @@
      <Compile Include="Assets\Scripts\Utilities\StarController.cs" />
      <Compile Include="Assets\Scripts\Utilities\StarRotation.cs" />
      <Compile Include="Assets\Scripts\Utilities\TimeBarController.cs" />
-     <Compile Include="Assets\Scripts\WallBounceController.cs" />
+     <Compile Include="Assets\Scripts\Utilities\Trophies.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\LeanTween\ReadMe.txt" />

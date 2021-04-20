@@ -12,7 +12,7 @@ public class FinalLevelPlaneController : MonoBehaviour
     public void UnlockLevel() {
 
         //Changing object Y position
-        finalPlane.transform.position = new Vector3 (3, 0, -6);
+        finalPlane.transform.position = new Vector3(6f, 0f, -9.5f);
 
         //Enabling trigger
         GameObject platform = finalPlane.transform.Find("Platform").gameObject;

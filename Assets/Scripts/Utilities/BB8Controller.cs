@@ -9,6 +9,7 @@ public class BB8Controller : MonoBehaviour
     public float jumpForce = 10f;
     public float jumpOffset = 0.3f;
     public GameObject head;
+    public bool canJump = true;
     private Rigidbody rb;
     private float distToGround;
 
@@ -22,7 +23,9 @@ public class BB8Controller : MonoBehaviour
     void FixedUpdate()
     {
         if (InputManagement.IsEnabled()) {
-            Jump();
+            if (canJump) {
+                Jump();
+            }
             float horizontal = Input.GetAxis("VerticalKey");
             float vertical = Input.GetAxis("HorizontalKey");
 

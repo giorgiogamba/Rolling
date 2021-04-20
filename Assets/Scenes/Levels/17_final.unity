@@ -6761,7 +6761,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: COMPLETED!
+  m_text: CONGRATULATIONS! SEI STATO RUBINATO :)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0ce4faff712e1421ba7e5b429bfbd488, type: 2}
   m_sharedMaterial: {fileID: 3386914555521763123, guid: 0ce4faff712e1421ba7e5b429bfbd488,
