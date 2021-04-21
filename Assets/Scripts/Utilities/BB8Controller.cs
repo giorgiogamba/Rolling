@@ -60,14 +60,12 @@ public class BB8Controller : MonoBehaviour
 
     void OnCollisionEnter(Collision other) {
         if (other.gameObject.tag == "OBS") {
-            Debug.Log("parente");
             transform.parent.SetParent(other.transform); 
         }
     }
 
     void OnCollisionExit(Collision other) {
         if (other.gameObject.tag == "OBS") {
-            Debug.Log("annullato");
             transform.parent.SetParent(null);
         }
     }

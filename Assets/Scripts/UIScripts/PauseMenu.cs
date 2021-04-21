@@ -36,7 +36,8 @@ public class PauseMenu : MonoBehaviour
         SceneManager.UnloadSceneAsync(sceneName);
         Resources.UnloadUnusedAssets();
         Scoring.ResetTries();
+        Time.timeScale = 1;
+        InputManagement.EnableInput();
         SceneManager.LoadScene("Scenes/Levels/HUB/1_HUB"); //Loading HUB
-
     }
 }

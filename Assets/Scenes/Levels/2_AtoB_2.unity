@@ -2332,6 +2332,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2490951672986017564, guid: c474546b2e82948e986ae342b51ac164,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2490951672986017565, guid: c474546b2e82948e986ae342b51ac164,
         type: 3}
       propertyPath: jumpForce
@@ -4164,7 +4169,7 @@ PrefabInstance:
     - target: {fileID: 7132179488511449771, guid: 29b9d60420d4c4776bb909a2b5712a61,
         type: 3}
       propertyPath: time
-      value: 100
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7132179488511449771, guid: 29b9d60420d4c4776bb909a2b5712a61,
         type: 3}
