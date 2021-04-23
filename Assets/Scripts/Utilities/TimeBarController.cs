@@ -16,10 +16,12 @@ public class TimeBarController : MonoBehaviour
     public LevelLoader ll;
     private int actionid;
     private bool doneManageFailure = false;
+    private LTDescr descr;
     
     void Start()
     {
         SetScore();
+        Debug.Log(bar.GetType());
         message.SetActive(false);
         completed_message.SetActive(false);
 
@@ -40,7 +42,12 @@ public class TimeBarController : MonoBehaviour
                 StartCoroutine(OutOfTheFieldRoutine());
                 doneManageFailure = true;
             }
-            
+        }
+
+        //try
+        float remainedTime = descr.time - descr.passed;
+        if (remainedTime < 10) {
+            bar.GetComponent<Image>().color = Color.red;
         }
     }
 
@@ -52,7 +59,10 @@ public class TimeBarController : MonoBehaviour
     }
 
     public void AnimateBar() {
-        actionid = LeanTween.scaleX(bar, 0, time).setOnComplete(showMessage).id;
+        //actionid = LeanTween.scaleX(bar, 0, time).setOnComplete(showMessage).id;
+        
+        descr = LeanTween.scaleX(bar, 0, time).setOnComplete(showMessage);
+        actionid = descr.id;
     }
 
     private void showOutOfTheFieldMessage() {

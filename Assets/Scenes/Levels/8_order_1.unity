@@ -1374,7 +1374,7 @@ MonoBehaviour:
   - {fileID: 565199732}
   - {fileID: 562634650}
   returnToHUB: 0
-  nextLevelPath: Scenes/Levels/13_color_order_3
+  nextLevelPath: Scenes/Levels/13_color_order_2
 --- !u!20 &769482169 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 4681457452956665487, guid: afcf1981054a048b99c84b78c946e47c,
@@ -2330,12 +2330,12 @@ PrefabInstance:
     - target: {fileID: 256687670027243131, guid: 327db78bf7113457fb915b29183bcf7b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6631510290829153979, guid: 327db78bf7113457fb915b29183bcf7b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8453088322406336780, guid: 327db78bf7113457fb915b29183bcf7b,
         type: 3}

@@ -14,6 +14,9 @@ public class PlanesColorController : MonoBehaviour
     void Start()
     {
         totplanes = planes.Count;
+        if (planes.Count == 0) {
+            Debug.LogError("PlanesColorController: planes count is 0");
+        }
     }
 
     // Update is called once per frame
@@ -29,7 +32,7 @@ public class PlanesColorController : MonoBehaviour
 
         if (count == totplanes)
         {
-            Debug.Log("FINE");
+            Debug.Log("END");
             GetComponent<TimeBarController>().Completed();
             for (int j = 0; j < planes.Count; j++) {
                 planes[j].GetComponent<PlaneController>().enabled = false;
@@ -38,8 +41,6 @@ public class PlanesColorController : MonoBehaviour
                 Material mat = planes[j].GetComponent<Renderer>().material;
                 mat.color = Color.yellow;
             }
-            //ll.LoadNextLevel();
-            //ll.LoadLevelName("10_color_run_2", "ColorRun", true);
             if (returnToHUB) {
                 Trophies.TrophyCompleted("ColorRun");
                 ll.ReturnToHub();
