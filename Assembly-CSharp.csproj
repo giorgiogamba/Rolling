@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{662d2cf7-2871-7f30-da53-0be93c5a264a}</ProjectGuid>
+    <ProjectGuid>{e76aa6e0-c8b0-9c7f-b5c7-096caf45ec90}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -71,11 +71,6 @@
      <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
      <Compile Include="Assets\Scripts\Ball\KeyController.cs" />
      <Compile Include="Assets\Scripts\Ball\WallBounceController.cs" />
-     <Compile Include="Assets\Scripts\Cannon\CannonController.cs" />
-     <Compile Include="Assets\Scripts\Cannon\CannonCursorController.cs" />
-     <Compile Include="Assets\Scripts\Cannon\ObsController.cs" />
-     <Compile Include="Assets\Scripts\Cannon\PointChecker.cs" />
-     <Compile Include="Assets\Scripts\Cannon\StrikesCounterController.cs" />
      <Compile Include="Assets\Scripts\ColorRun\PlaneController.cs" />
      <Compile Include="Assets\Scripts\ColorRun\PlanesColorController.cs" />
      <Compile Include="Assets\Scripts\ColorTrigger.cs" />
@@ -84,19 +79,9 @@
      <Compile Include="Assets\Scripts\FinalLevel\FinalLevelColorTrigger.cs" />
      <Compile Include="Assets\Scripts\FinalLevel\FinalLevelController.cs" />
      <Compile Include="Assets\Scripts\FinalLevel\FinalLevelPlaneController.cs" />
-     <Compile Include="Assets\Scripts\PasspartoutController.cs" />
+     <Compile Include="Assets\Scripts\ObsController.cs" />
      <Compile Include="Assets\Scripts\PlatformTrigger.cs" />
-     <Compile Include="Assets\Scripts\Progress Scripts\AutomaticMovement.cs" />
-     <Compile Include="Assets\Scripts\Progress Scripts\StepController.cs" />
      <Compile Include="Assets\Scripts\RotationController.cs" />
-     <Compile Include="Assets\Scripts\Tests\AutomaticCannon.cs" />
-     <Compile Include="Assets\Scripts\Tests\CarController.cs" />
-     <Compile Include="Assets\Scripts\Tests\CharController.cs" />
-     <Compile Include="Assets\Scripts\Tests\CharControllerProva.cs" />
-     <Compile Include="Assets\Scripts\Tests\LetterTrigController.cs" />
-     <Compile Include="Assets\Scripts\Tests\ObjectiveController.cs" />
-     <Compile Include="Assets\Scripts\Tests\ProvaRand.cs" />
-     <Compile Include="Assets\Scripts\Tests\SphereController.cs" />
      <Compile Include="Assets\Scripts\UIScripts\CommandsMenu.cs" />
      <Compile Include="Assets\Scripts\UIScripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\UIScripts\OptionsMenu.cs" />
@@ -106,6 +91,7 @@
      <Compile Include="Assets\Scripts\Utilities\LauncherController.cs" />
      <Compile Include="Assets\Scripts\Utilities\LevelLoader.cs" />
      <Compile Include="Assets\Scripts\Utilities\MyExtensions.cs" />
+     <Compile Include="Assets\Scripts\Utilities\PasspartoutController.cs" />
      <Compile Include="Assets\Scripts\Utilities\Scoring.cs" />
      <Compile Include="Assets\Scripts\Utilities\StarController.cs" />
      <Compile Include="Assets\Scripts\Utilities\StarRotation.cs" />
@@ -673,31 +659,31 @@
         <HintPath>/Applications/2019.4.11f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>/Volumes/HD/Progetti Unity/Progetto_SISRV/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>/Volumes/HD/Progetti Unity/ProgettoSRV-master/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>/Volumes/HD/Progetti Unity/Progetto_SISRV/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>/Volumes/HD/Progetti Unity/ProgettoSRV-master/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>/Volumes/HD/Progetti Unity/Progetto_SISRV/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>/Volumes/HD/Progetti Unity/ProgettoSRV-master/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>/Volumes/HD/Progetti Unity/Progetto_SISRV/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>/Volumes/HD/Progetti Unity/ProgettoSRV-master/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>/Volumes/HD/Progetti Unity/Progetto_SISRV/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>/Volumes/HD/Progetti Unity/ProgettoSRV-master/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-        <HintPath>/Volumes/HD/Progetti Unity/Progetto_SISRV/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+        <HintPath>/Volumes/HD/Progetti Unity/ProgettoSRV-master/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>/Volumes/HD/Progetti Unity/Progetto_SISRV/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>/Volumes/HD/Progetti Unity/ProgettoSRV-master/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>/Volumes/HD/Progetti Unity/Progetto_SISRV/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>/Volumes/HD/Progetti Unity/ProgettoSRV-master/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>/Volumes/HD/Progetti Unity/Progetto_SISRV/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>/Volumes/HD/Progetti Unity/ProgettoSRV-master/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
