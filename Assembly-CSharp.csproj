@@ -80,6 +80,7 @@
      <Compile Include="Assets\Scripts\FinalLevel\FinalLevelController.cs" />
      <Compile Include="Assets\Scripts\FinalLevel\FinalLevelPlaneController.cs" />
      <Compile Include="Assets\Scripts\ObsController.cs" />
+     <Compile Include="Assets\Scripts\OutOfTheFIeldController.cs" />
      <Compile Include="Assets\Scripts\PlatformTrigger.cs" />
      <Compile Include="Assets\Scripts\RotationController.cs" />
      <Compile Include="Assets\Scripts\UIScripts\CommandsMenu.cs" />
@@ -92,6 +93,7 @@
      <Compile Include="Assets\Scripts\Utilities\LevelLoader.cs" />
      <Compile Include="Assets\Scripts\Utilities\MyExtensions.cs" />
      <Compile Include="Assets\Scripts\Utilities\PasspartoutController.cs" />
+     <Compile Include="Assets\Scripts\Utilities\PauseController.cs" />
      <Compile Include="Assets\Scripts\Utilities\Scoring.cs" />
      <Compile Include="Assets\Scripts\Utilities\StarController.cs" />
      <Compile Include="Assets\Scripts\Utilities\StarRotation.cs" />

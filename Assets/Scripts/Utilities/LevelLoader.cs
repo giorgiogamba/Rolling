@@ -52,6 +52,10 @@ public class LevelLoader : MonoBehaviour {
         SceneManager.LoadScene("Scenes/Levels/UI/2_restart");
     }
 
+    public void ReloadHUB() {
+        StartCoroutine(LoadLevelNameCoroutine("Scenes/Levels/HUB/1_HUB"));
+    }
+
     public void ReturnToHub() {
         textEntrance.SetActive(false);
         StartCoroutine(LoadLevelNameCoroutine("Scenes/Levels/HUB/1_HUB"));

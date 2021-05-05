@@ -34,7 +34,9 @@ public class Trophies : MonoBehaviour
             string tempname = "Platform_"+trophies[j].Item1;
             if (Equals(plane.name, tempname)) {
                 if (trophies[j].Item2 == 1) {
-                    plane.GetComponent<Renderer>().material = trophyMaterial;
+                    //plane.GetComponent<Renderer>().material = trophyMaterial;
+                    GameObject trigger = plane.transform.Find("Trigger").gameObject;
+                    trigger.GetComponent<Renderer>().material = trophyMaterial;
                 }
             }
         }

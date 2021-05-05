@@ -13,22 +13,25 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Pause")) {
-            Pause();
+        if (PauseController.isEnabled()) {
+            if (Input.GetButtonDown("Pause")) {
+                Pause();
+            }
         }
     }
 
     private void Pause() {
+        PauseController.DisablePause();
         Time.timeScale = 0; //Pausing every movement
         InputManagement.DisableInput(); //Disabling player movements
         SceneManager.LoadScene("3_pause", LoadSceneMode.Additive); //Loading pause UI scene
-
     }
 
     public void Resume() {
         SceneManager.UnloadSceneAsync("3_pause"); //Closing pause UI
         Time.timeScale = 1; //Start movements
         InputManagement.EnableInput(); //Enabling character inputs
+        PauseController.EnablePause();
     }
 
     public void BackToHUB() {
@@ -39,5 +42,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         InputManagement.EnableInput();
         SceneManager.LoadScene("Scenes/Levels/HUB/1_HUB"); //Loading HUB
+        PauseController.EnablePause();
     }
 }

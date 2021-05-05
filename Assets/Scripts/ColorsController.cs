@@ -52,7 +52,8 @@ public class ColorsController : MonoBehaviour
         //Assigning colors to objs
         indexes.Shuffle();
         for (int i = 0; i < canvas.Count; i ++) {
-            objs[i].GetComponent<Renderer>().material.color = colors[indexes[i]].color;
+            //objs[i].GetComponent<Renderer>().material.color = colors[indexes[i]].color;
+            objs[i].GetComponent<Renderer>().material.SetColor("_Color", colors[indexes[i]].color);
         }
 
         Debug.Log("Colors initialized");
