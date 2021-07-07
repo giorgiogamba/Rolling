@@ -75,7 +75,7 @@ public class TimeBarController : MonoBehaviour
         //Locking player movements
         GameObject sphere = player.transform.Find("Sphere").gameObject;
         if (sphere != null) {
-            sphere.GetComponent<BB8Controller>().enabled = false;
+            sphere.GetComponent<PlayerController>().enabled = false;
             sphere.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
         }
         ManageFailure();
